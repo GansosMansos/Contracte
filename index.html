@@ -3,103 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contrato</title>
-    <p style="text-align: center;"><h1>CONTRACTE DE FIDELITAT </h1></p>
+    <title>link per anar al dirve</title>
+    <p style="text-align: center;"><h1>link per anar al drive </h1></p>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f4;
         }
         .container {
-            max-width: 800px;
-            margin: auto;
+            text-align: center;
+            background: white;
             padding: 20px;
-            border: 1px solid #000;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
-        .text {
-            width: 60%;
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
         }
-        .image {
-            width: 35%;
-            text-align: right;
-            margin-top: 33%;
+        .btn:hover {
+            background-color: #0056b3;
         }
-        h1, h2 {
-            text-align: center;
-        }
-        .signature {
-            margin-top: 40px;
-            margin-right: 50px;
-            display: flex;
-            justify-content: space-between;
-        }
-        .signature div {
-            text-align: center;
-            width: 45%;
-        }
-        .signature hr {
-            width: 100%;
-            margin-left: 10px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-       
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="text">
-            <p><strong>Fecha:</strong> <span id="fecha"></span></p>
-            <p><strong>Entre:</strong> Cendrassos, amb identificació N° <u>ProfessorCendrassos;</u></p>
-            <p><strong>I:</strong> Pep Hernandez Navarra, amb identificació N° <u>696969696969;</u></p>
-            <p><strong>I:</strong> Josep Bosom Gonzàlez, amb identificació N° <u>000000000777;</u></p>
-            
-            <h2>Clàusules</h2>
-            <p><strong>Primera:</strong> Donar el 100% en aquest projecte i projectes a futur.</p>
-            <p><strong>Segona:</strong> La finalització del contracte es portarà a terme a finals de curs.</p>
-            <p><strong>Tercera:</strong> Obligacións de el contractat i el contractant, les dos entitats s'hauran de respectar i valorar el treball fet per cadascuna de les dos parts. </p>
-            <p><strong>Quarta:</strong> Causes per les quals pot finalitzar el contracte són: Incumpliment de les clausules abans proposades, faltes de respecte per alguna de les dos parts.</p>
-            <p><strong>Cinquena:</strong> El salari proposat per els contractats serà de 1 QuackCoin= 0'0000000001€ </p>
-          <br>
-          <br>
-            
-            <div class="signature">
-                <div>
-                    <img src="Sin título.jpg">
-                    <br>
-                    <br>
-                    <hr style="border: 2px solid black; width: 75%;">
-                    <p>Firma del Contratante</p>
-                </div>
-         
-                <div>
-                    <img src="Sin título2.png">
-                    <br>
-                    <hr style="border: 2px solid black; width: 75%;">
-                    <p>Firma del Contratado</p>
-                    <br>
-                </div>
-
-                <div>
-                    <img src="Sin título3.png" alt="">
-                    <hr style="border: 2px solid black; width: 75%;">
-                    <p>Firma del Contratado</p>
-                </div>
-            </div>
-        </div>
-        <div class="image">
-            <img src="https://www.clarin.com/2018/10/10/VIHT327L5_1256x620__1.jpg" alt="Imagen del contrato">
-        </div>
+        <h1>Bienvenido a mi página</h1>
+        <p>Haz clic en el botón de abajo para ir a otra página.</p>
+        <a href="https://www.ejemplo.com" class="btn">Ir a otra página</a>
     </div>
-
-    <script>
-        document.getElementById("fecha").textContent = new Date().toLocaleDateString();
-    </script>
 </body>
 </html>
